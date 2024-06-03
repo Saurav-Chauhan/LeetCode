@@ -1,0 +1,12 @@
+Python Solution:
+class Solution:
+    def orderlyQueue(self, s: str, k: int) -> str:
+      n = len(str)
+      result = []
+      if k > 1:
+        sort(s)
+      else:
+        for l in range(1,len(n)-1):
+          temp = str[l:]+str[:l]
+          result = min(temp,result)
+    return result
